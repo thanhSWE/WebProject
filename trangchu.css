@@ -1,15 +1,15 @@
-*{
+* {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
-.trangchu_jpg {
-  width: 1500px;
-  height: 600px;
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
+
 header.container {
-  max-width: 1096px;
-  display: flex;
-  align-items: center;
   background-color: #fff;
   height: 80px;
   padding: 10px;
@@ -55,18 +55,6 @@ nav.navbar #logo {
   width: 120px;
 }
 
-nav.navbar .nav.justify-content-end {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-nav.navbar .nav.justify-content-end .search,
-nav.navbar .nav.justify-content-end .user,
-nav.navbar .nav.justify-content-end .cart-shopping {
-  margin-left: 15px;
-}
-
 nav.navbar .nav.justify-content-end .user .modal-dialog {
   width: 400px;
 }
@@ -104,21 +92,20 @@ nav.navbar .nav.justify-content-end .user button.btn-primary:hover {
   display: flex;
   justify-content: center;
   /* canh giữa theo chiều ngang */
+  overflow: hidden;
+
   align-items: center;
 }
-.end-img{
+.end-img {
   display: flex;
   align-items: center;
-  width: 1200px;
-
+  width: 100%;
 }
-main h1{
+main h1 {
   font-size: 64px;
   font-weight: bold;
   text-align: center;
-
 }
-
 
 .img_fruit {
   width: fit-content;
@@ -126,16 +113,16 @@ main h1{
   margin: 1px;
 }
 
-.dropdown-menu ul {
+/* .dropdown-menu ul {
   position: absolute;
   top: 100%;
   left: 0;
   display: none;
-}
+} */
 
-.dropdown-menu li:hover > ul {
+/* .dropdown-menu li:hover > ul {
   display: block;
-}
+} */
 
 .section--img,
 .section--center {
@@ -144,6 +131,15 @@ main h1{
   /* canh giữa theo chiều ngang */
   align-items: center;
   /* canh giữa theo chiều dọc */
+}
+
+.section--center img {
+  margin: 1rem;
+  max-width: 50%;
+}
+.section--img img {
+  margin: 1rem;
+  max-width: 50%;
 }
 footer {
   display: flex;
@@ -163,7 +159,34 @@ footer {
 .section_5--footer a {
   margin: 0 10px;
 }
-footer p{
+footer p {
   text-align: center;
   justify-content: center;
+}
+
+.flex-grow-unset {
+  flex-grow: unset;
+}
+.navbar {
+  position: relative;
+}
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  transform: translate(-50%, -50%);
+  height: 80px;
+}
+
+.logo img {
+  max-height: 100%;
+}
+header {
+  position: relative;
+}
+.user-function {
+  position: absolute;
+  right: 1rem;
+  top: 40px;
+  transform: translateY(-50%);
 }

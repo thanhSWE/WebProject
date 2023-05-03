@@ -6,4 +6,11 @@ main{
     padding-top:5rem;
 }
 
+.form-login,.form-signup, .logout {
+  max-width: 100%;
+  width: 500px;
+  margin: 2rem auto;
+  
+}
+
 

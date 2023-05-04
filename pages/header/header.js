@@ -78,12 +78,12 @@ header.innerHTML = `
           </ul>
         </div>
       </nav>
-      <a class="logo" href="#">
+      <a class="logo" href="../../trangchu.html">
         <img src="../../Picture/logoHD.jpg" alt="" id="logo" />
       </a>
       <ul class="d-flex flex-row gap-3 user-function">
         <li class="search">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="../search/index.html"><i class="fa-solid fa-magnifying-glass"></i></a>
         </li>
         <li class="user">
           <a

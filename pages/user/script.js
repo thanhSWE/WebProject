@@ -2,7 +2,7 @@ const USERS = "userList"
 const LOGINED = "logined"
 
 const logined = localStorage.getItem(LOGINED)
-if (logined !=null) {
+if (logined != null) {
   alert("Bạn đã đăng nhập!")
   location.replace("./detail.html")
 }
@@ -27,7 +27,7 @@ function login(e) {
   })
 
   if (searchResult) {
-    localStorage.setItem(LOGINED, JSON.stringify(searchResult));
+    localStorage.setItem(LOGINED, JSON.stringify(searchResult))
     alert("Đăng nhập thành công!")
     location.replace("../../trangchu.html")
   } else alert("Vui lòng kiểm tra lại email và mật khẩu")

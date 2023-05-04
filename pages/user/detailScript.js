@@ -59,7 +59,7 @@ function signup(e) {
       userList[findIndex].email = emailValue
       userList[findIndex].password = passwordValue
       localStorage.setItem(USERS, JSON.stringify(userList))
-      localStorage.setItem(LOGINED,JSON.stringify(userList[findIndex]));
+      localStorage.setItem(LOGINED, JSON.stringify(userList[findIndex]))
       alert("Tài khoản được cập nhật thành công!")
       location.reload()
     }
@@ -72,5 +72,5 @@ if (formSignup) formSignup.addEventListener("submit", signup)
 function logout() {
   alert("Đăng xuất thành công")
   localStorage.removeItem(LOGINED)
-  location.replace("../../trangchu.html")
+  location.replace("../../index.html")
 }

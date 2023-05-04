@@ -1,9 +1,11 @@
+const productTitle = document.querySelector(".product-detail__name")
+
 const productImgMain = document.querySelector(".product-img-main")
 const productImgSub = document.querySelector(".product-img-sub")
 const data = localStorage.getItem("product").split("/")
 const [productType, productCode] = data
 console.log(productType, productCode)
-
+productTitle.innerHTML = productType + " " + productCode
 productImgMain.innerHTML = `
               <img
                 src="../../Picture/clothes/${productType}/${productCode}/1.jpg"
